@@ -11,6 +11,9 @@
         "ip", 
         "net"
     ],
+    "bin": {
+      "whatismyip": "./bin/whatismyip"
+    },
     "repository": {
       "type": "git",
       "url": "http://github.com/kosmasgiannis/whatismyip.git"
@@ -21,6 +24,7 @@
     "main": "lib/whatismyip.js",
     "license": "MIT",
     "dependencies":{
+        "commander":"",
         "request":"2.27.0"
     }
 }

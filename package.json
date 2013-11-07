@@ -1,12 +1,22 @@
 {
     "name":"whatismyip",
     "version":"0.0.1",
-    "author": "Giannis Kosmas",
+    "author": {
+        "name" : "Giannis Kosmas",
+        "email" : "kosmasgiannis@gmail.com"
+    },
     "keywords": [
-                 "ipaddress", 
-                 "ip", 
-                 "net"
-                ],
+        "ipaddress", 
+        "ip", 
+        "net"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "http://github.com/kosmasgiannis/whatismyip.git"
+    },
+    "bugs": {
+      "url": "http://github.com/kosmasgiannis/whatismyip/issues"
+    },
     "main": "lib/whatismyip.js",
     "license": "MIT",
     "dependencies":{

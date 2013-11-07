@@ -1,0 +1,15 @@
+{
+    "name":"whatismyip",
+    "version":"0.0.1",
+    "author": "Giannis Kosmas",
+    "keywords": [
+                 "ipaddress", 
+                 "ip", 
+                 "net"
+                ],
+    "main": "lib/whatismyip.js",
+    "license": "MIT",
+    "dependencies":{
+        "request":"2.27.0"
+    }
+}

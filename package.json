@@ -21,6 +21,7 @@
     "bugs": {
       "url": "http://github.com/kosmasgiannis/whatismyip/issues"
     },
+    "preferGlobal": true,
     "main": "lib/whatismyip.js",
     "license": "MIT",
     "dependencies":{

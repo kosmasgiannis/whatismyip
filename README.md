@@ -2,10 +2,11 @@
 
 Node.js package to provide the current public IP address from remote IP lookup servers.
 
-###Use it in your own application
+##Installation
 
-####Installation
-    > npm install whatismyip
+[![NPM](https://nodei.co/npm/whatismyip.png)](https://nodei.co/npm/whatismyip/)
+
+###Use it in your own application
 
 ####Usage
 
@@ -23,12 +24,7 @@ Node.js package to provide the current public IP address from remote IP lookup s
       }
     });
 
-
 ###Use as standalone application
-
-####Installation
-
-    > npm install -g whatismyip
 
 ####Usage
 

@@ -27,6 +27,7 @@ if (program.urls) {
     {url:'http://ifconfig.me/ip', truncate:''},
     {url:'http://whatismyip.herokuapp.com/', truncate:''},
     {url:'http://whatismyip.oceanus.ro/myip.php', truncate:'', matchIndex:1},
+    {url:'https://www.statdns.net/', truncate:'', matchIndex:0},
     {url:'http://corz.org/ip', truncate:''}
   ];
 }

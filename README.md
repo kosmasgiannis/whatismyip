@@ -4,6 +4,8 @@ Node.js package to provide the current public IP address from remote IP lookup s
 
 ##Installation
 
+[![Dependency Status](https://gemnasium.com/kosmasgiannis/whatismyip.png)](https://gemnasium.com/kosmasgiannis/whatismyip)
+
 [![NPM](https://nodei.co/npm/whatismyip.png)](https://nodei.co/npm/whatismyip/)
 
 ###Use it in your own application

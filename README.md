@@ -53,3 +53,7 @@ or
 #####Get Help
 
     $ whatismyip --help
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kosmasgiannis/whatismyip/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+

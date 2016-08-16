@@ -43,7 +43,7 @@ for (var hostId in hosts) {
       };
 
   ip.whatismyip(options, function(err, data){
-    if (!err) { 
+    if (!err) {
       if (program.verbose) {
         console.log('From '+data.url+' : '+((data.ip) ? data.ip : 'not resolved,')+' time taken : ', data.time - start);
       } else {
@@ -53,7 +53,7 @@ for (var hostId in hosts) {
           console.warn('Could not resolve ip from the specified host(s).')
         }
       }
-      if ((! program.all) || (program.all && ! program.verbose)) {
+      if ((! program.all) || (!program.all && ! program.verbose)) {
         process.exit();
       }
     }

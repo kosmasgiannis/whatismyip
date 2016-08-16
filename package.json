@@ -1,6 +1,6 @@
 {
     "name":"whatismyip",
-    "version":"0.0.9",
+    "version":"1.0.0",
     "description" : "Node.js package to provide the current public IP address from remote IP lookup servers.",
     "author": {
         "name" : "Giannis Kosmas",

@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 var program = require('commander');
+var util = require('util');
 var ip = require('../lib/whatismyip.js');
 
 function list(val) {
@@ -55,6 +56,10 @@ for (var hostId in hosts) {
       }
       if ((! program.all) || (!program.all && ! program.verbose)) {
         process.exit();
+      }
+    } else {
+      if (program.verbose) {
+        console.log('From '+data.url+' : '+((data.ip) ? data.ip : 'not resolved,')+' time taken : ', data.time - start, 'Error:', util.inspect(data.error,{depth:null}));
       }
     }
   });

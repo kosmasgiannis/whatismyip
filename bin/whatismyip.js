@@ -30,7 +30,8 @@ if (program.urls) {
     {url:'http://whatismyip.oceanus.ro/myip.php', truncate:'', matchIndex:1},
     {url:'https://showip.net/', truncate:''},
     {url:'http://www.showmemyip.com/', truncate:''},
-    {url:'http://www.showmyip.gr/', truncate:''}
+    {url:'http://www.showmyip.gr/', truncate:''},
+    {url:'http://www.showipinfo.net/', truncate:/.*Your Local Ip/}
   ];
 }
 

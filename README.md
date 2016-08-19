@@ -34,6 +34,14 @@ Node.js package to provide the current public IP address from remote IP lookup s
 
     $ whatismyip
 
+#####Get your IPv6 address
+
+    $ whatismyip -6
+
+or
+
+    $ whatismyip --ipv6
+
 #####Get your IP address as well as the server that responded first and the time taken to serve the request.
 
     $ whatismyip -v

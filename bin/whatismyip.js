@@ -12,6 +12,7 @@ program
   .version('0.0.1')
   .option('-a, --all', 'Hit all servers')
   .option('-u, --urls <list>', 'A comma separated list of urls of servers to lookup', list)
+  .option('-6, --ipv6', 'Check for ipv6 address')
   .option('-v, --verbose', 'Be verbose')
   .parse(process.argv);
 
@@ -22,18 +23,25 @@ if (program.urls) {
     hosts.push({'url' : u, 'truncate' : '', 'matchIndex' : 0});
   });
 } else {
-  hosts = [
-    {url:'http://checkip.amazonaws.com/', truncate:''},
-    {url:'http://checkip.dyndns.org/', truncate:[/^.*Current IP Address: /, /<.*$/]},
-    {url:'http://ifconfig.me/ip', truncate:''},
-    {url:'http://whatismyip.herokuapp.com/', truncate:''},
-    {url:'http://whatismyip.oceanus.ro/myip.php', truncate:'', matchIndex:1},
-    {url:'https://showip.net/', truncate:''},
-    {url:'http://www.showmemyip.com/', truncate:''},
-    {url:'http://www.showmyip.gr/', truncate:''},
-    {url:'http://www.showipinfo.net/', truncate:/.*Your Local Ip/}
-  ];
+  if (program.ipv6) {
+    hosts = [
+      {url:'http://ipv6.whatismyv6.com/', truncate:''}
+    ];
+  } else {
+    hosts = [
+      {url:'http://checkip.amazonaws.com/', truncate:''},
+      {url:'http://checkip.dyndns.org/', truncate:[/^.*Current IP Address: /, /<.*$/]},
+      {url:'http://ifconfig.me/ip', truncate:''},
+      {url:'http://whatismyip.herokuapp.com/', truncate:''},
+      {url:'http://whatismyip.oceanus.ro/myip.php', truncate:'', matchIndex:1},
+      {url:'https://showip.net/', truncate:''},
+      {url:'http://www.showmemyip.com/', truncate:''},
+      {url:'http://www.showmyip.gr/', truncate:''},
+      {url:'http://www.showipinfo.net/', truncate:/.*Your Local Ip/}
+    ];
+  }
 }
+
 
 var start = Date.now();
 
@@ -45,7 +53,8 @@ for (var hostId in hosts) {
         matchIndex: host['matchIndex']
       };
 
-  ip.whatismyip(options, function(err, data){
+  var func = (program.ipv6 === true) ? ip.whatismyipv6 : ip.whatismyipv4;
+  func(options, function(err, data){
     if (!err) {
       if (program.verbose) {
         console.log('From '+data.url+' : '+((data.ip) ? data.ip : 'not resolved,')+' time taken : ', data.time - start);

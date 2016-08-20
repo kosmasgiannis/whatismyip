@@ -29,6 +29,7 @@ if (program.urls) {
     ];
   } else {
     hosts = [
+      {url:'https://api.ipify.org/', truncate:''},
       {url:'http://checkip.amazonaws.com/', truncate:''},
       {url:'http://checkip.dyndns.org/', truncate:[/^.*Current IP Address: /, /<.*$/]},
       {url:'http://ifconfig.me/ip', truncate:''},

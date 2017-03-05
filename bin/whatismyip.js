@@ -38,7 +38,7 @@ if (program.urls) {
       {url:'https://showip.net/', truncate:''},
       {url:'http://www.showmemyip.com/', truncate:''},
       {url:'http://www.showmyip.gr/', truncate:''},
-      {url:'http://www.showipinfo.net/', truncate:/.*Your Local Ip/}
+      {url:'http://www.showipinfo.net/', truncate:/.*Client_IP: /}
     ];
   }
 }

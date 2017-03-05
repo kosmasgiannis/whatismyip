@@ -1,6 +1,6 @@
 {
     "name":"whatismyip",
-    "version":"1.1.1",
+    "version":"1.1.2",
     "description" : "Get your current public IP address fast and easy.",
     "author": {
         "name" : "Giannis Kosmas",
@@ -26,6 +26,7 @@
     "preferGlobal": true,
     "main": "lib/whatismyip.js",
     "license": "MIT",
+    "private": false,
     "dependencies":{
         "commander": "^2.9.0",
         "request": "^2.74.0"

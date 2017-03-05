@@ -25,8 +25,8 @@ if (program.urls) {
 } else {
   if (program.ipv6) {
     hosts = [
-      {url:'http://ipv6.whatismyv6.com/', truncate:''}
-      {url:'https://ifconfig.co/ip', truncate:''}
+      {url:'http://ipv6.whatismyv6.com/', truncate:''},
+      {url:'https://v6.ifconfig.co/ip', truncate:''}
     ];
   } else {
     hosts = [

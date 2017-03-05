@@ -26,13 +26,14 @@ if (program.urls) {
   if (program.ipv6) {
     hosts = [
       {url:'http://ipv6.whatismyv6.com/', truncate:''}
+      {url:'https://ifconfig.co/ip', truncate:''}
     ];
   } else {
     hosts = [
       {url:'https://api.ipify.org/', truncate:''},
       {url:'http://checkip.amazonaws.com/', truncate:''},
       {url:'http://checkip.dyndns.org/', truncate:[/^.*Current IP Address: /, /<.*$/]},
-      {url:'http://ifconfig.me/ip', truncate:''},
+      {url:'https://v4.ifconfig.co/ip', truncate:''},
       {url:'http://whatismyip.herokuapp.com/', truncate:''},
       {url:'http://whatismyip.oceanus.ro/myip.php', truncate:'', matchIndex:1},
       {url:'https://showip.net/', truncate:''},

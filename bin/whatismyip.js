@@ -31,15 +31,12 @@ if (program.urls) {
   } else {
     hosts = [
       {url:'https://api.ipify.org/', truncate:''},
+      {url:'https://ip.seeip.org/', truncate:''},
       {url:'http://checkip.amazonaws.com/', truncate:''},
       {url:'http://checkip.dyndns.org/', truncate:[/^.*Current IP Address: /, /<.*$/]},
-      {url:'https://v4.ifconfig.co/ip', truncate:''},
-      {url:'http://whatismyip.herokuapp.com/', truncate:''},
       {url:'http://whatismyip.oceanus.ro/myip.php', truncate:'', matchIndex:1},
-      {url:'https://showip.net/', truncate:''},
-      {url:'http://www.showmemyip.com/', truncate:''},
-      {url:'http://www.showmyip.gr/', truncate:''},
-      {url:'http://www.showipinfo.net/', truncate:/.*Client_IP: /}
+      {url:'http://showip.net/', truncate:''},
+      {url:'http://www.showmemyip.com/', truncate:''}
     ];
   }
 }

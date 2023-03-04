@@ -36,7 +36,9 @@ if (program.urls) {
       {url:'http://checkip.dyndns.org/', truncate:[/^.*Current IP Address: /, /<.*$/]},
       {url:'http://whatismyip.oceanus.ro/myip.php', truncate:'', matchIndex:1},
       {url:'http://showip.net/', truncate:''},
-      {url:'http://www.showmemyip.com/', truncate:''}
+      {url:'http://www.showmemyip.com/', truncate:''},
+      {url:'https://api.myip.com/', truncate:''}
+
     ];
   }
 }

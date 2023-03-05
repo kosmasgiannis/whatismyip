@@ -32,6 +32,7 @@ if (program.urls) {
     hosts = [
       {url:'https://api.ipify.org/', truncate:''},
       {url:'https://ip.seeip.org/', truncate:''},
+      {url:'https://ifconfig.me/ip', truncate:''},
       {url:'http://checkip.amazonaws.com/', truncate:''},
       {url:'http://checkip.dyndns.org/', truncate:[/^.*Current IP Address: /, /<.*$/]},
       {url:'http://whatismyip.oceanus.ro/myip.php', truncate:'', matchIndex:1},

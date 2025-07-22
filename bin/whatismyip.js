@@ -40,7 +40,6 @@ if (opts.urls) {
       {url:'https://ipecho.net/plain', truncate:''},
       {url:'https://ipaddr.site', truncate:''},
       {url:'https://api.ipify.org/', truncate:''},
-      {url:'https://ip.seeip.org/', truncate:''},
       {url:'https://ifconfig.me/ip', truncate:''},
       {url:'http://checkip.amazonaws.com/', truncate:''},
       {url:'http://checkip.dyndns.org/', truncate:[/^.*Current IP Address: /, /<.*$/]},

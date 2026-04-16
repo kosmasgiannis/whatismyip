@@ -14,11 +14,11 @@
         "net"
     ],
     "bin": {
-        "whatismyip": "./bin/whatismyip.js"
+        "whatismyip": "bin/whatismyip.js"
     },
     "repository": {
         "type": "git",
-        "url": "http://github.com/kosmasgiannis/whatismyip.git"
+        "url": "git+ssh://git@github.com/kosmasgiannis/whatismyip.git"
     },
     "bugs": {
         "url": "http://github.com/kosmasgiannis/whatismyip/issues"
